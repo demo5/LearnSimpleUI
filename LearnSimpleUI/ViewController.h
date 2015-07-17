@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *outputLable;
+@property (weak, nonatomic) IBOutlet UITextField *inputText;
+@property (weak, nonatomic) IBOutlet UIButton *interactiveButton;
 
+- (IBAction)interactiveButton:(id)sender;
+- (IBAction) textFieldDoneEditing:(id)sender;
 @end
 
